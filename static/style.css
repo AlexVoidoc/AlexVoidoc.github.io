@@ -2,17 +2,22 @@ h1 {
     color: black
 }
 
+/* ------ Navigation Start ----- */
+
 /* Navigation Bar */
-#navigation {
-    list-style-type: none;
+#main-navigation {
     position: fixed;
+    background-color: #333;
     width: 100%;
     top: 0;
     left: 0;
+}
+
+#navigation-list {
+    list-style-type: none;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
 }
 
 /* Navigation Bar Buttons */
@@ -31,3 +36,5 @@ h1 {
 .navigation-active {
     background-color: DarkSlateBlue;
 }
+
+/* ----- Navigation End ----- */
