@@ -38,3 +38,28 @@ h1 {
 }
 
 /* ----- Navigation End ----- */
+
+#main-footer {
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#link-list {
+    list-style-type: none;
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    bottom: 0;
+}
