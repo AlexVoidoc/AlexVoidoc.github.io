@@ -12,5 +12,5 @@ def about():
 
 
 @app.route("/")
-def hello_name(name=None):
+def home():
     return render_template("home.html")

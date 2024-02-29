@@ -1,16 +1,30 @@
-h1 {
-    color: black
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#home-title-image {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#home-title {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    background-image: url("static/images/UTM_overhead.jpg")
 }
 
 /* ------ Navigation Start ----- */
 
 /* Navigation Bar */
 #main-navigation {
-    position: fixed;
+    position: sticky;
     background-color: #333;
     width: 100%;
     top: 0;
-    left: 0;
 }
 
 #navigation-list {
@@ -40,7 +54,7 @@ h1 {
 /* ----- Navigation End ----- */
 
 #main-footer {
-    position: absolute;
+    position: static;
     background-color: #333;
     width: 100%;
     bottom: 0;
