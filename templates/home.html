@@ -13,25 +13,27 @@
 
 <nav id="main-navigation">
     <ul id="navigation-list">
-        <li class="navigation-button navigation-active">Home</li>
-        <li class="navigation-button"><a href="/about">About</a></li>
-        <li class="navigation-button">Education</li>
-        <li class="navigation-button">Work Experience</li>
-        <li class="navigation-button">Projects</li>
+        <li><button type="button" class="navigation-button navigation-active" onclick='location.href=""'>Home</button></li>
+        <li><button type="button" class="navigation-button" onclick='location.href="/about"'>About</button></li>
+        <li><button type="button" class="navigation-button" onclick='location.href="/education"'>Education</button></li>
+        <li><button type="button" class="navigation-button" onclick='location.href="/work-experience"'>Work Experience</button></li>
+        <li><button type="button" class="navigation-button" onclick='location.href="/projects"'>Projects</button></li>
+        <li>
+            <a href="https://github.com/alexvoidoc" target="_blank">
+                <button type="button" class="navigation-button float-right" id="github"><img src="/static/images/GithubLogo.png" alt="Github Logo" class="logo-button">Github</button>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/alex-voidoc" target="_blank">
+                <button type="button" class="navigation-button float-right" id="linkedin"><img src="/static/images/LinkedInLogo.png" alt="LinkedIn Logo" class="logo-button">LinkedIn</button>
+            </a>
+        </li>
     </ul>
 </nav>
 
 <div class="basic-text" style="margin-top: 500px">
     <h1>Hello</h1>
 </div>
-
-<footer id="main-footer">
-    <ul id="link-list">
-        <li class="footer-text">LinkedIn</li>
-        <li class="footer-text">Github</li>
-    </ul>
-</footer>
-
 
 </body>
 </html>
