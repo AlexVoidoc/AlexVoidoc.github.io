@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/navigation.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/home.css') }}">
     <title>Home</title>
 </head>
 <body>
 
-<div id="home-banner">Alexander Voidoc</div>
+<div id="home-banner"><div id="banner-name">Alexander Voidoc</div></div>
 
 <!--Navigation Bar-->
 
@@ -31,9 +32,19 @@
     </ul>
 </nav>
 
-<div class="basic-text" style="margin-top: 500px">
-    <h1>Hello</h1>
+<div id="home-block">
+    <div id="home-text">
+        <div id="home-text-title">Meet Me</div>
+        I am a second-year Computer Science and Mathematics undergraduate student at the University of Toronto,
+        currently pursuing a career in software development and AI. I began my journey into computer science by
+        programming games utilizing the Unreal Engine. I began teaching myself more complex programming techniques and
+        loved doing it, so I began formally learning computer science and since then, it's been my goal to break into
+        the field and learn more. I look forward to contributing to projects that push the boundaries of what's
+        possible, whether that's new groundbreaking AI technology, or general software that improves the lives of people.
+    </div>
+    <img id="personal-photo" src="/static/images/Me.jpg" alt="A picture of Alexander Voidoc">
 </div>
+
 
 </body>
 </html>
