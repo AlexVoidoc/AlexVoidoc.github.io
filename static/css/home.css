@@ -18,17 +18,16 @@
     animation: fadeIn 3s;
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0; translate: 0 50px;}
-    100% {opacity: 1; translate: 0 0;}
+#banner-name.in-view {
+    color: red;
 }
 
-#home-block {
+#about-block {
     display: flex;
     align-items: center;
 }
 
-#home-text {
+.home-text {
     color: white;
     font-family: Georgia, sans-serif;
     font-size: 20px;
@@ -40,11 +39,14 @@
     text-align: center;
 }
 
-#home-text-title {
+.home-text-title {
     font-size: 50px;
     font-weight: bold;
-    border-bottom: 2px solid white;
-    margin-bottom: 15px;
+    margin-bottom: -15px;
+}
+
+.home-text-title.in-view {
+    animation: fadeInTop 2s forwards;
 }
 
 #personal-photo {
@@ -57,4 +59,32 @@
     object-fit: cover;
     border: 7px solid #111111;
     padding: 0;
+}
+
+.white-bar {
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin: 10px auto;
+    transition: width 2s;
+}
+
+.white-bar.in-view {
+    width: 15vw;
+}
+
+.skills-block {
+    display: flex;
+    background-color: #111111;
+    border-bottom: 2px solid ghostwhite;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; translate: 0 50px;}
+    100% {opacity: 1; translate: 0 0;}
+}
+
+@keyframes fadeInTop {
+    0% {opacity: 0; translate: 0 -50px;}
+    100% {opacity: 1; translate: 0 0;}
 }
