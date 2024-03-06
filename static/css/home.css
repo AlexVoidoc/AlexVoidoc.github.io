@@ -77,6 +77,32 @@
     display: flex;
     background-color: #111111;
     border-bottom: 2px solid ghostwhite;
+    align-items: center;
+}
+
+.skills-title {
+    color: antiquewhite;
+    font-family: Georgia, sans-serif;
+    font-size: 40px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 4vw;
+}
+
+.skills-list {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 2vw;
+    width: 25vw;
+}
+
+.skills-list-item {
+    background-color: #444;
+    color: white;
+    font-size: 20px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
 }
 
 @keyframes fadeIn {

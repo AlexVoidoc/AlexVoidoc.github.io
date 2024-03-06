@@ -11,11 +11,8 @@ window.addEventListener('scroll', function() {
         let position = element.getBoundingClientRect();
 
         // check if element is visible in viewport
-        if(position.top >= 0 && position.bottom <= window.innerHeight + 100) {
+        if(position.top >= 100 && position.bottom <= window.innerHeight + 100) {
             element.classList.add('in-view');
-        }
-        else {
-            element.classList.remove('in-view');
         }
 
     }
