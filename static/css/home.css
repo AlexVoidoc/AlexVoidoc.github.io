@@ -75,22 +75,26 @@
 
 .skills-block {
     display: flex;
-    background-color: #111111;
+    background-color: #1a1a1a;
     border-bottom: 2px solid antiquewhite;
     align-items: center;
-    flex-grow: 1;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .skills-title {
     color: antiquewhite;
     font-family: Georgia, sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 4vh;
     margin-bottom: 4vh;
     margin-left: 4vw;
 }
 
 .skills-list {
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
     list-style-type: none;
     overflow: hidden;
     margin-left: 2vw;
@@ -101,18 +105,24 @@
 .skills-list-item {
     background-color: #444;
     color: white;
-    font-size: 20px;
+    font-size: 23px;
     float: left;
     margin: 5px;
     padding: 5px;
+    transition: .25s;
+}
+
+.skills-list-item:hover {
+    background-color: #555;
+    padding: 8px;
 }
 
 .image-grid {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     flex-grow: 0;
     width: 60vw;
-    height: 30vh;
+    height: auto;
     margin-right: 4vw;
     align-items: center;
     justify-content: center;
@@ -121,7 +131,12 @@
 .image-grid img {
     width: 90px;
     object-fit: scale-down;
-    padding: 15px;
+    padding: 20px;
+    transition: .5s;
+}
+
+.image-grid img:hover {
+    width: 100px;
 }
 
 @keyframes fadeIn {
