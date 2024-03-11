@@ -80,6 +80,9 @@
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
+.alt-skills-block {
+    background-color: #141414;
+}
 
 .skills-title {
     color: antiquewhite;
@@ -146,6 +149,48 @@
 
 .image-grid img:hover {
     transform: scale(1.2);
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.certificate img {
+    height: 90px;
+}
+
+.certificate-button {
+    color: white;
+    background-color: #141414;
+    border: 2px solid antiquewhite;
+    text-align: center;
+    font-size: 20px;
+    font-family: Garamond, sans-serif;
+    font-weight: bold;
+    padding: 20px 20px;
+    transition: 0.5s;
+}
+.certificate-button:hover {
+    box-shadow: rgba(167, 159, 147, 0.34) 0 0 5px 5px;
+    transform: scale(1.1);
+}
+
+#footer {
+    background-color: #0e0e0e;
+    align-items: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-align: center;
+    font-size: 30px;
+    color: white;
 }
 
 @keyframes fadeIn {
