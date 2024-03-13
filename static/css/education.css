@@ -1,0 +1,63 @@
+/* Overall education display */
+#education-display {
+    display: flex;
+    justify-content: center;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    margin-top: 15vh;
+}
+
+/* Display school info */
+.school-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: Georgia, sans-serif;
+    width: calc(50% - 1px);
+}
+
+.left {
+    position: absolute;
+    left: 0;
+}
+.right {
+    position: absolute;
+    right: 0;
+}
+
+.school-logo {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    margin-top: -10vh;
+    margin-bottom: -4vh;
+}
+
+/* Vertical bar for splitting schools */
+.vertical-bar {
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 15vh;
+    bottom: 10vh;
+    background-color: #444444;
+}
+
+/* Horizontal white bar with animation */
+.white-bar {
+    height: 2px;
+    width: 0;
+    background-color: white;
+    margin: 15px auto;
+    animation: barStretch 2s forwards;
+}
+
+@keyframes barStretch {
+    0% {width: 0; translate: 0 20px;}
+    100% {width: 15vw; translate: 0 0;}
+}
