@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/navigation.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
     <script src="{{ url_for('static', filename='/javascript/home.js') }}"></script>
     <title>Alex Voidoc</title>
 </head>
@@ -32,6 +32,7 @@
     </ul>
 </nav>
 
+<!-- About section -->
 <div id="about-block">
     <div class="home-text">
         <div class="home-text-title animated-element">Meet Me</div>
@@ -44,10 +45,11 @@
     <img id="personal-photo" src="/static/images/Me.jpg" alt="A picture of Alexander Voidoc">
 </div>
 
-<div class="home-block"></div>
+<!-- Skills Section-->
 <div class="home-text-title home-text animated-element">Skills</div>
 <div class="white-bar animated-element"></div>
 <br>
+<!-- Programming Languages -->
 <div class="skills-block">
     <div class="skills-title">Languages</div>
     <ul class="skills-list">
@@ -73,6 +75,7 @@
         <img src="/static/images/RiscVLogo.png" alt="RISC-V Assembly programming language logo">
     </span>
 </div>
+<!-- Frameworks and Technologies -->
 <div class="skills-block alt-skills-block">
     <span class="image-grid">
          <img src="/static/images/GitLogo.png" alt="Git logo">
@@ -102,6 +105,7 @@
     </ul>
     <div class="skills-title alt-skills-title">Frameworks & <br>Technologies</div>
 </div>
+<!-- Certificate Sections -->
 <div class=skills-block>
     <div class="skills-title">Certifications</div>
     <div class="certificate image-grid">
@@ -123,6 +127,24 @@
         </a>
         </div>
 </div>
+<!-- Education Section -->
+<br>
+<div class="home-text-title home-text animated-element">Education</div>
+<div class="white-bar animated-element"></div>
+<br>
+<div id="education">
+    <div class="school-block-left">
+        <img class="school-logo" src="/static/images/UofTLogo.png" alt="A picture of the University of Toronto logo">
+        <br>
+        University of Toronto
+    </div>
+    <div class="school-block-right">
+        <img class="school-logo" src="/static/images/HighSchoolLogo.png" alt="A picture of the Corpus Christi Catholic Secondary School logo">
+        <br>
+        Corpus Christi<br>Catholic Secondary School
+    </div>
+</div>
+<!-- Footer -->
 <div id="footer">Contact: AlexVoidoc@gmail.com</div>
 </body>
 </html>
