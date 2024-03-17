@@ -4,6 +4,10 @@ body {
     background-color: #222;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ------ Navigation Start ----- */
 
 /* Navigation Bar */

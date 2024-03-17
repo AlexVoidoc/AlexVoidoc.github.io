@@ -29,6 +29,12 @@
     align-items: center;
 }
 
+#about-text {
+    background: #1a1a1a;
+    padding: 3vh 2vw 5vh;
+    box-shadow: 15px 15px #111111;
+}
+
 /* Main text formatting */
 .home-text {
     color: white;
@@ -200,13 +206,13 @@
     text-align: center;
     font-size: 30px;
     color: white;
+    font-family: Georgia, sans-serif;
 }
 
 /* Education Section Formatting */
 #education {
     display: flex;
     justify-content: center;
-    margin: 15vh 8vw;
 }
 
 .school-block-left, .school-block-right {
@@ -218,15 +224,82 @@
     font-size: 50px;
     color: white;
     font-family: Georgia, sans-serif;
-    width: calc(50% - 1px);
+    width: 50%;
+    height: auto;
+    margin-top: 4vh;
 }
 
 .school-logo {
     width: 18rem;
     height: 18rem;
     object-fit: cover;
-    margin-top: -10vh;
-    margin-bottom: -4vh;
+}
+
+.degree-left, .degree-right {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    align-self: flex-start;
+    font-size: 25px;
+    background: #1a1a1a;
+    color: antiquewhite;
+    padding: 2vh 2vw;
+    line-height: 40px;
+    box-shadow: 10px 10px;
+    transition: .5s;
+}
+
+.degree-left {
+    align-self: flex-start;
+    box-shadow: 10px 10px #111111;
+}
+
+.degree-left:hover {
+    padding-left: 4vw;
+}
+
+.degree-right{
+    align-self: flex-end;
+    box-shadow: -10px 10px #111111;
+}
+
+.degree-right:hover {
+    padding-right: 4vw;
+}
+
+.school-date {
+    color: white;
+}
+
+.vertical-bar {
+    width: 3px;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #444444;
+}
+
+.awards {
+    font-size: 40px;
+}
+
+.awards-list-left, .awards-list-right {
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    list-style-type: none;
+    list-style-position: inside;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 1vh;
+}
+
+.awards-list-left li::before, .awards-list-right li::before {
+    content: "\25E6";
+    margin-right: 10px;
+}
+.awards-list-left li::after, .awards-list-right li::after {
+    content: "\25E6";
+    margin-left: 10px;
 }
 
 /* Animations */

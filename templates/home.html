@@ -15,8 +15,9 @@
 
 <nav id="main-navigation">
     <ul id="navigation-list">
-        <li><button type="button" class="navigation-button navigation-active" onclick='location.href=""'>Home</button></li>
-        <li><button type="button" class="navigation-button" onclick='location.href="/education"'>Education</button></li>
+        <li><button type="button" class="navigation-button navigation-active" onclick="document.getElementById('home-banner').scrollIntoView();">Home</button></li>
+        <li><button type="button" class="navigation-button" onclick="document.getElementById('skills').scrollIntoView();">Skills</button></li>
+        <li><button type="button" class="navigation-button" onclick="document.getElementById('education-nav').scrollIntoView();">Education</button></li>
         <li><button type="button" class="navigation-button" onclick='location.href="/work-experience"'>Work Experience</button></li>
         <li><button type="button" class="navigation-button" onclick='location.href="/projects"'>Projects</button></li>
         <li>
@@ -35,20 +36,24 @@
 <!-- About section -->
 <div id="about-block">
     <div class="home-text">
+        <div id="about-text">
         <div class="home-text-title animated-element">Meet Me</div>
         <div class="white-bar animated-element"></div>
         I am a second-year Computer Science and Mathematics undergraduate student at the University of Toronto,
         currently pursuing a career in Software Development and Artificial Intelligence. I look forward to contributing
         to projects that push the boundaries of what's possible, whether that's new groundbreaking AI technology, or
         general software that improves the lives of people.
+        </div>
     </div>
     <img id="personal-photo" src="/static/images/Me.jpg" alt="A picture of Alexander Voidoc">
 </div>
 
 <!-- Skills Section-->
+<div id="skills">
 <div class="home-text-title home-text animated-element">Skills</div>
 <div class="white-bar animated-element"></div>
 <br>
+</div>
 <!-- Programming Languages -->
 <div class="skills-block">
     <div class="skills-title">Languages</div>
@@ -113,7 +118,7 @@
         Google IT Automation
         <br>
         <img src="/static/images/GoogleLogo.png" alt="Google logo">
-        <a href="/pdfs/Google%20IT%20Automation%20Certificate.pdf" target="_blank">
+        <a href="/static/pdfs/Google%20IT%20Automation%20Certificate.pdf" target="_blank">
             <button type="button" class="certificate-button">Download Certificate</button>
         </a>
         </div>
@@ -122,27 +127,51 @@
         Meta Back-End Developer
         <br>
         <img src="/static/images/MetaLogo.png" alt="Meta logo">
-        <a href="/pdfs/Meta%20Backend%20Developer%20Certificate.pdf" target="_blank">
+        <a href="/static/pdfs/Meta%20Backend%20Developer%20Certificate.pdf" target="_blank">
             <button type="button" class="certificate-button">Download Certificate</button>
         </a>
         </div>
 </div>
+
 <!-- Education Section -->
 <br>
 <div class="home-text-title home-text animated-element">Education</div>
 <div class="white-bar animated-element"></div>
-<br>
+<br id="education-nav">
 <div id="education">
     <div class="school-block-left">
         <img class="school-logo" src="/static/images/UofTLogo.png" alt="A picture of the University of Toronto logo">
         <br>
         University of Toronto
+        <div class="degree-left">
+            HBSc, Computer Science and Mathematics<br><div class="school-date">Sep. 2022 - May. 2027 (Expected)</div>
+        </div>
+        <div class="awards">Awards</div>
+        <div class="white-bar animated-element"></div>
+        <ul class="awards-list-left">
+            <li>Dean's List Scholar</li>
+            <li>University of Toronto Entrance Scholarship</li>
+        </ul>
     </div>
+    <div class="vertical-bar"></div>
     <div class="school-block-right">
         <img class="school-logo" src="/static/images/HighSchoolLogo.png" alt="A picture of the Corpus Christi Catholic Secondary School logo">
         <br>
         Corpus Christi<br>Catholic Secondary School
+        <div class="degree-right">
+            Ontario Secondary School Diploma<br><div class="school-date">Sep. 2018 - Jun. 2022</div>
+        </div>
+        <div class="awards">Awards</div>
+        <div class="white-bar animated-element"></div>
+        <ul class="awards-list-right">
+            <li>Ontario Scholar</li>
+            <li>Canadian Computing Competition (Junior) Certificate of Distinction</li>
+            <li>Fermat Math Contest Certificate of Distinction & School Medal Champion</li>
+            <li>Grade 10 Highest Computer Science Average Academic Achievement Award</li>
+        </ul>
+
     </div>
+
 </div>
 <!-- Footer -->
 <div id="footer">Contact: AlexVoidoc@gmail.com</div>
