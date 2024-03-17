@@ -15,11 +15,11 @@
 
 <nav id="main-navigation">
     <ul id="navigation-list">
-        <li><button type="button" class="navigation-button navigation-active" onclick="document.getElementById('home-banner').scrollIntoView();">Home</button></li>
-        <li><button type="button" class="navigation-button" onclick="document.getElementById('skills').scrollIntoView();">Skills</button></li>
-        <li><button type="button" class="navigation-button" onclick="document.getElementById('education-nav').scrollIntoView();">Education</button></li>
-        <li><button type="button" class="navigation-button" onclick='location.href="/work-experience"'>Work Experience</button></li>
-        <li><button type="button" class="navigation-button" onclick='location.href="/projects"'>Projects</button></li>
+        <li><button type="button" class="navigation-button home-nav" id="navigation-active" onclick="document.getElementById('home-banner').scrollIntoView();">Home</button></li>
+        <li><button type="button" class="navigation-button skills-nav" onclick="document.getElementById('skills').scrollIntoView();">Skills</button></li>
+        <li><button type="button" class="navigation-button education-nav" onclick="document.getElementById('education').scrollIntoView();">Education</button></li>
+        <li><button type="button" class="navigation-button work-experience-nav" onclick='location.href="/work-experience"'>Work Experience</button></li>
+        <li><button type="button" class="navigation-button projects-nav" onclick='location.href="/projects"'>Projects</button></li>
         <li>
             <a href="https://github.com/alexvoidoc" target="_blank">
                 <button type="button" class="navigation-button float-right" id="github"><img src="/static/images/GithubLogo.png" alt="Github Logo" class="logo-button">Github</button>
@@ -137,12 +137,12 @@
 <br>
 <div class="home-text-title home-text animated-element">Education</div>
 <div class="white-bar animated-element"></div>
-<br id="education-nav">
+<br id="education-section">
 <div id="education">
     <div class="school-block-left">
         <img class="school-logo" src="/static/images/UofTLogo.png" alt="A picture of the University of Toronto logo">
         <br>
-        University of Toronto
+        <div class="school-text">University of Toronto</div>
         <div class="degree-left">
             HBSc, Computer Science and Mathematics<br><div class="school-date">Sep. 2022 - May. 2027 (Expected)</div>
         </div>
@@ -157,7 +157,7 @@
     <div class="school-block-right">
         <img class="school-logo" src="/static/images/HighSchoolLogo.png" alt="A picture of the Corpus Christi Catholic Secondary School logo">
         <br>
-        Corpus Christi<br>Catholic Secondary School
+        <div class="school-text">Corpus Christi<br>Catholic Secondary School</div>
         <div class="degree-right">
             Ontario Secondary School Diploma<br><div class="school-date">Sep. 2018 - Jun. 2022</div>
         </div>
@@ -169,8 +169,9 @@
             <li>Fermat Math Contest Certificate of Distinction & School Medal Champion</li>
             <li>Grade 10 Highest Computer Science Average Academic Achievement Award</li>
         </ul>
-
     </div>
+</div>
+<div id="work-experience">
 
 </div>
 <!-- Footer -->

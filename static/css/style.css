@@ -213,6 +213,7 @@
 #education {
     display: flex;
     justify-content: center;
+    align-items: stretch;
 }
 
 .school-block-left, .school-block-right {
@@ -227,6 +228,13 @@
     width: 50%;
     height: auto;
     margin-top: 4vh;
+    align-self: flex-start;
+}
+
+.school-text {
+    height: 100px;
+    margin-bottom: 2vh;
+    margin-top: -2vh
 }
 
 .school-logo {
