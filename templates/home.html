@@ -17,9 +17,8 @@
     <ul id="navigation-list">
         <li><button type="button" class="navigation-button home-nav" id="navigation-active" onclick="document.getElementById('home-banner').scrollIntoView();">Home</button></li>
         <li><button type="button" class="navigation-button skills-nav" onclick="document.getElementById('skills').scrollIntoView();">Skills</button></li>
-        <li><button type="button" class="navigation-button education-nav" onclick="document.getElementById('education').scrollIntoView();">Education</button></li>
-        <li><button type="button" class="navigation-button work-experience-nav" onclick='location.href="/work-experience"'>Work Experience</button></li>
-        <li><button type="button" class="navigation-button projects-nav" onclick='location.href="/projects"'>Projects</button></li>
+        <li><button type="button" class="navigation-button education-nav" onclick="document.getElementById('education-section').scrollIntoView();">Education</button></li>
+        <li><button type="button" class="navigation-button projects-nav" onclick="document.getElementById('projects').scrollIntoView();">Projects</button></li>
         <li>
             <a href="https://github.com/alexvoidoc" target="_blank">
                 <button type="button" class="navigation-button float-right" id="github"><img src="/static/images/GithubLogo.png" alt="Github Logo" class="logo-button">Github</button>
@@ -107,6 +106,7 @@
         <li class="skills-list-item">Unix</li>
         <li class="skills-list-item">Agile</li>
         <li class="skills-list-item">CI/CD</li>
+        <li class="skills-list-item">Ripes</li>
     </ul>
     <div class="skills-title alt-skills-title">Frameworks & <br>Technologies</div>
 </div>
@@ -171,8 +171,69 @@
         </ul>
     </div>
 </div>
-<div id="work-experience">
-
+<br>
+<!-- Projects Section -->
+<div class="home-text-title home-text animated-element">Projects</div>
+<div class="white-bar animated-element"></div>
+<div id="projects">
+    <!-- Assembly Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Castaway Chronicles</div>
+            <div class="project-subtitle">School Project</div>
+            <div class="project-date">Sep. 2023 - Dec. 2023</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">Java</li>
+            <li class="skills-list-item">JavaFX</li>
+            <li class="skills-list-item">Agile</li>
+            <li class="skills-list-item">Git</li>
+            <li class="skills-list-item">Object Oriented Programming</li>
+        </ul>
+        <img class="project-media" src="/static/images/CastawayChroniclesImage.png" alt="A picture of a grid with trees and birds">
+    </div>
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">RISC-V ISA Sokoban Game</div>
+            <div class="project-subtitle">School Project</div>
+            <div class="project-date">Oct. 2023 - Nov. 2023</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">RISC-V Assembly</li>
+            <li class="skills-list-item">Ripes</li>
+            <li class="skills-list-item">Dynamic Memory</li>
+        </ul>
+        <img class="project-media" src="/static/images/AssemblyProjectImage.png" alt="A picture of a RISC-V Project programmed in Ripes">
+    </div>
+    <!-- Guns N Stuff 2 Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Guns N Stuff 2</div>
+            <div class="project-subtitle">Game Development Project</div>
+            <div class="project-date">Sep. 2021 - Dec. 2022</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">Unreal Engine</li>
+            <li class="skills-list-item">Object Oriented Programming</li>
+            <li class="skills-list-item">Network Replication</li>
+            <li class="skills-list-item">Steam API</li>
+        </ul>
+        <iframe class="project-media" src="https://www.youtube.com/embed/avnnT9tOZZE" allowfullscreen></iframe>
+    </div>
+    <!-- Guns N Stuff Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Guns N Stuff</div>
+            <div class="project-subtitle">Game Development Project</div>
+            <div class="project-date">Jan. 2020 - Jul. 2020</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">Unreal Engine</li>
+            <li class="skills-list-item">Object Oriented Programming</li>
+            <li class="skills-list-item">Steam API</li>
+        </ul>
+        <iframe class="project-media" src="https://www.youtube.com/embed/rI4fBv0GdDE" allowfullscreen></iframe>
+    </div>
 </div>
 <!-- Footer -->
 <div id="footer">Contact: AlexVoidoc@gmail.com</div>

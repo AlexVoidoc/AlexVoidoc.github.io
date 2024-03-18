@@ -134,6 +134,9 @@
     margin: 5px;
     padding: 5px;
     transition: .25s;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
 
 .skills-list-item:hover {
@@ -213,7 +216,6 @@
 #education {
     display: flex;
     justify-content: center;
-    align-items: stretch;
 }
 
 .school-block-left, .school-block-right {
@@ -293,12 +295,23 @@
 .awards-list-left, .awards-list-right {
     font-size: 25px;
     text-align: center;
-    line-height: 60px;
     list-style-type: none;
     list-style-position: inside;
     width: 100%;
-    padding-left: 0;
+    padding: 0;
     margin-top: 1vh;
+}
+
+.awards-list-left li, .awards-list-right li {
+    padding: 12px 0;
+    margin: 10px 20px;
+    border: 2px solid #111111;
+    background-color: #1a1a1a;
+    transition: .5s;
+}
+
+.awards-list-left li:hover, .awards-list-right li:hover {
+    background-color: #333333;
 }
 
 .awards-list-left li::before, .awards-list-right li::before {
@@ -309,6 +322,55 @@
     content: "\25E6";
     margin-left: 10px;
 }
+
+/* Project Section Formatting */
+#projects {
+    background: #1a1a1a;
+    font-family: Georgia, sans-serif;
+}
+
+.project-block {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    border-bottom: 3px solid #111111;
+    transition: .25s;
+}
+
+.project-block:hover {
+    background: #111111;
+}
+
+.project-quick-info {
+    margin: 40px 40px;
+}
+
+.project-title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.project-subtitle {
+    color: #666666;
+    font-size: 25px;
+}
+
+.project-date {
+    color: antiquewhite;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.project-media {
+    object-fit: cover;
+    height: 17vw;
+    width: 30vw;
+    border: 5px solid #111111;
+    margin-left: auto;
+    margin-right: 10vw;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
