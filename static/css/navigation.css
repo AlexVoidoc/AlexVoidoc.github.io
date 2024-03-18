@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------ Navigation Start ----- */
+
+/* Navigation Bar */
+#main-navigation {
+    position: sticky;
+    background-color: #333;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+#navigation-list {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-bottom: 5px solid #111111;
+}
+
+/* Navigation Bar Buttons */
+.navigation-button {
+    background-color: #333;
+    border: none;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 1.5vw;
+    max-height: 60px;
+    font-size: 20px;
+    font-family: Garamond, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navigation-button:hover:not(#linkedin):not(#github) {
+    background-color: #111;
+    font-size: 22px;
+}
+
+#navigation-active {
+    background-color: dimgray;
+}
+
+/* ----- Navigation End ----- */
+
+.logo-button {
+    width: 30px;
+    height: 30px;
+    padding-right: 1vw;
+    margin-top: -15px;
+    margin-bottom: -10px;
+}
+
+#linkedin:hover {
+    background-color: #194b67;
+}
+
+#github:hover {
+    background-color: #ad6b1f;
+}
+
+.float-right {
+    float: right;
+}

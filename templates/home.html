@@ -2,36 +2,240 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/navigation.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <script src="{{ url_for('static', filename='/javascript/home.js') }}"></script>
+    <title>Alex Voidoc</title>
 </head>
 <body>
+
+<div id="home-banner"><div id="banner-name">Alexander Voidoc</div></div>
 
 <!--Navigation Bar-->
 
 <nav id="main-navigation">
     <ul id="navigation-list">
-        <li class="navigation-button navigation-active">Home</li>
-        <li class="navigation-button"><a href="/about">About</a></li>
-        <li class="navigation-button">Education</li>
-        <li class="navigation-button">Work Experience</li>
-        <li class="navigation-button">Projects</li>
+        <li><button type="button" class="navigation-button home-nav" id="navigation-active" onclick="document.getElementById('home-banner').scrollIntoView();">Home</button></li>
+        <li><button type="button" class="navigation-button skills-nav" onclick="document.getElementById('skills').scrollIntoView();">Skills</button></li>
+        <li><button type="button" class="navigation-button education-nav" onclick="document.getElementById('education-section').scrollIntoView();">Education</button></li>
+        <li><button type="button" class="navigation-button projects-nav" onclick="document.getElementById('projects').scrollIntoView();">Projects</button></li>
+        <li>
+            <a href="https://github.com/alexvoidoc" target="_blank">
+                <button type="button" class="navigation-button float-right" id="github"><img src="/static/images/GithubLogo.png" alt="Github Logo" class="logo-button">Github</button>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/alex-voidoc" target="_blank">
+                <button type="button" class="navigation-button float-right" id="linkedin"><img src="/static/images/LinkedInLogo.png" alt="LinkedIn Logo" class="logo-button">LinkedIn</button>
+            </a>
+        </li>
     </ul>
 </nav>
 
-{% if name %}
-<h1>Hello {{name}}</h1>
-{% else %}
-<h1>Hello :D</h1>
-{% endif %}
+<!-- About section -->
+<div id="about-block">
+    <div class="home-text">
+        <div id="about-text">
+        <div class="home-text-title animated-element">Meet Me</div>
+        <div class="white-bar animated-element"></div>
+        I am a second-year Computer Science and Mathematics undergraduate student at the University of Toronto,
+        currently pursuing a career in Software Development and Artificial Intelligence. I look forward to contributing
+        to projects that push the boundaries of what's possible, whether that's new groundbreaking AI technology, or
+        general software that improves the lives of people.
+        </div>
+    </div>
+    <img id="personal-photo" src="/static/images/Me.jpg" alt="A picture of Alexander Voidoc">
+</div>
 
-<footer id="main-footer">
-    <ul id="link-list">
-        <li class="footer-text">LinkedIn</li>
-        <li class="footer-text">Github</li>
+<!-- Skills Section-->
+<div id="skills">
+<div class="home-text-title home-text animated-element">Skills</div>
+<div class="white-bar animated-element"></div>
+<br>
+</div>
+<!-- Programming Languages -->
+<div class="skills-block">
+    <div class="skills-title">Languages</div>
+    <ul class="skills-list">
+        <li class="skills-list-item">Python</li>
+        <li class="skills-list-item">Java</li>
+        <li class="skills-list-item">C</li>
+        <li class="skills-list-item">Bash</li>
+        <li class="skills-list-item">SQL</li>
+        <li class="skills-list-item">RISC-V Assembly</li>
+        <li class="skills-list-item">Javascript</li>
+        <li class="skills-list-item">HTML</li>
+        <li class="skills-list-item">CSS</li>
     </ul>
-</footer>
+    <span class="image-grid">
+        <img src="/static/images/CLogo.png" alt="C programming language logo">
+        <img src="/static/images/PythonLogo.png" alt="Python programming language logo">
+        <img src="/static/images/JavaLogo.png" alt="Java programming language logo">
+        <img src="/static/images/SQLLogo.png" alt="SQL programming language logo">
+        <img src="/static/images/HTMLLogo.png" alt="HTML programming language logo">
+        <img src="/static/images/CSSLogo.png" alt="CSS programming language logo">
+        <img src="/static/images/JavascriptLogo.png" alt="Javascript programming language logo">
+        <img src="/static/images/BashLogo.png" alt="Bash programming language logo">
+        <img src="/static/images/RiscVLogo.png" alt="RISC-V Assembly programming language logo">
+    </span>
+</div>
+<!-- Frameworks and Technologies -->
+<div class="skills-block alt-skills-block">
+    <span class="image-grid">
+         <img src="/static/images/GitLogo.png" alt="Git logo">
+         <img src="/static/images/FlaskLogo.png" alt="Flask logo">
+         <img src="/static/images/UnrealEngineLogo.png" alt="Unreal Engine logo">
+         <img src="/static/images/UnixLogo.png" alt="Picture of terminal">
+         <img src="/static/images/DjangoLogo.png" alt="Django logo">
+         <img src="/static/images/CLionLogo.png" alt="CLion logo">
+         <img src="/static/images/IntelliJLogo.png" alt="IntelliJ logo">
+         <img src="/static/images/PyCharmLogo.png" alt="PyCharm logo">
+         <img src="/static/images/VisualStudioLogo.png" alt="Visual Studio logo">
+     </span>
+    <ul class="skills-list alt-skills-list">
+        <li class="skills-list-item">Git</li>
+        <li class="skills-list-item">Unreal Engine</li>
+        <li class="skills-list-item">Django</li>
+        <li class="skills-list-item">Django REST</li>
+        <li class="skills-list-item">IntelliJ</li>
+        <li class="skills-list-item">PyCharm</li>
+        <li class="skills-list-item">CLion</li>
+        <li class="skills-list-item">JavaFX</li>
+        <li class="skills-list-item">Visual Studio</li>
+        <li class="skills-list-item">Flask</li>
+        <li class="skills-list-item">Unix</li>
+        <li class="skills-list-item">Agile</li>
+        <li class="skills-list-item">CI/CD</li>
+        <li class="skills-list-item">Ripes</li>
+    </ul>
+    <div class="skills-title alt-skills-title">Frameworks & <br>Technologies</div>
+</div>
+<!-- Certificate Sections -->
+<div class=skills-block>
+    <div class="skills-title">Certifications</div>
+    <div class="certificate image-grid">
+        <!-- Google Certificate -->
+        Google IT Automation
+        <br>
+        <img src="/static/images/GoogleLogo.png" alt="Google logo">
+        <a href="/static/pdfs/Google%20IT%20Automation%20Certificate.pdf" target="_blank">
+            <button type="button" class="certificate-button">Download Certificate</button>
+        </a>
+        </div>
+         <!-- Meta Certificate -->
+        <div class="certificate image-grid">
+        Meta Back-End Developer
+        <br>
+        <img src="/static/images/MetaLogo.png" alt="Meta logo">
+        <a href="/static/pdfs/Meta%20Backend%20Developer%20Certificate.pdf" target="_blank">
+            <button type="button" class="certificate-button">Download Certificate</button>
+        </a>
+        </div>
+</div>
 
-
+<!-- Education Section -->
+<br>
+<div class="home-text-title home-text animated-element">Education</div>
+<div class="white-bar animated-element"></div>
+<br id="education-section">
+<div id="education">
+    <div class="school-block-left">
+        <img class="school-logo" src="/static/images/UofTLogo.png" alt="A picture of the University of Toronto logo">
+        <br>
+        <div class="school-text">University of Toronto</div>
+        <div class="degree-left">
+            HBSc, Computer Science and Mathematics<br><div class="school-date">Sep. 2022 - May. 2027 (Expected)</div>
+        </div>
+        <div class="awards">Awards</div>
+        <div class="white-bar animated-element"></div>
+        <ul class="awards-list-left">
+            <li>Dean's List Scholar</li>
+            <li>University of Toronto Entrance Scholarship</li>
+        </ul>
+    </div>
+    <div class="vertical-bar"></div>
+    <div class="school-block-right">
+        <img class="school-logo" src="/static/images/HighSchoolLogo.png" alt="A picture of the Corpus Christi Catholic Secondary School logo">
+        <br>
+        <div class="school-text">Corpus Christi<br>Catholic Secondary School</div>
+        <div class="degree-right">
+            Ontario Secondary School Diploma<br><div class="school-date">Sep. 2018 - Jun. 2022</div>
+        </div>
+        <div class="awards">Awards</div>
+        <div class="white-bar animated-element"></div>
+        <ul class="awards-list-right">
+            <li>Ontario Scholar</li>
+            <li>Canadian Computing Competition (Junior) Certificate of Distinction</li>
+            <li>Fermat Math Contest Certificate of Distinction & School Medal Champion</li>
+            <li>Grade 10 Highest Computer Science Average Academic Achievement Award</li>
+        </ul>
+    </div>
+</div>
+<br id="projects-section">
+<!-- Projects Section -->
+<div class="home-text-title home-text animated-element">Projects</div>
+<div class="white-bar animated-element"></div>
+<div id="projects">
+    <!-- Assembly Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Castaway Chronicles</div>
+            <div class="project-subtitle">School Project</div>
+            <div class="project-date">Sep. 2023 - Dec. 2023</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">Java</li>
+            <li class="skills-list-item">JavaFX</li>
+            <li class="skills-list-item">Agile</li>
+            <li class="skills-list-item">Git</li>
+            <li class="skills-list-item">Object Oriented Programming</li>
+        </ul>
+        <img class="project-media" src="/static/images/CastawayChroniclesImage.png" alt="A picture of a grid with trees and birds">
+    </div>
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">RISC-V ISA Sokoban Game</div>
+            <div class="project-subtitle">School Project</div>
+            <div class="project-date">Oct. 2023 - Nov. 2023</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">RISC-V Assembly</li>
+            <li class="skills-list-item">Ripes</li>
+            <li class="skills-list-item">Dynamic Memory</li>
+        </ul>
+        <img class="project-media" src="/static/images/AssemblyProjectImage.png" alt="A picture of a RISC-V Project programmed in Ripes">
+    </div>
+    <!-- Guns N Stuff 2 Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Guns N Stuff 2</div>
+            <div class="project-subtitle">Game Development Project</div>
+            <div class="project-date">Sep. 2021 - Dec. 2022</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">Unreal Engine</li>
+            <li class="skills-list-item">Object Oriented Programming</li>
+            <li class="skills-list-item">Network Replication</li>
+            <li class="skills-list-item">Steam API</li>
+        </ul>
+        <iframe class="project-media" src="https://www.youtube.com/embed/avnnT9tOZZE" allowfullscreen></iframe>
+    </div>
+    <!-- Guns N Stuff Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Guns N Stuff</div>
+            <div class="project-subtitle">Game Development Project</div>
+            <div class="project-date">Jan. 2020 - Jul. 2020</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">Unreal Engine</li>
+            <li class="skills-list-item">Object Oriented Programming</li>
+            <li class="skills-list-item">Steam API</li>
+        </ul>
+        <iframe class="project-media" src="https://www.youtube.com/embed/rI4fBv0GdDE" allowfullscreen></iframe>
+    </div>
+</div>
+<!-- Footer -->
+<div id="footer">Contact: AlexVoidoc@gmail.com</div>
 </body>
 </html>
