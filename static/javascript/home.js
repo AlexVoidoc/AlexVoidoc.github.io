@@ -22,12 +22,12 @@ window.addEventListener('scroll', function() {
 // Event listener for switching active section of website
 window.addEventListener('scroll', function() {
     // Navigation sections
-    var sections = ['about-text', 'skills', 'education-section', 'projects']
+    var sections = ['about-text', 'skills', 'education-section', 'projects-section']
     let sectionNavMap = {
         'about-text': '.home-nav',
         'skills': '.skills-nav',
         'education-section': '.education-nav',
-        'projects': '.projects-nav'
+        'projects-section': '.projects-nav'
     }
 
     // Scroll through each navigation section
