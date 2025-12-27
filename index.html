@@ -17,6 +17,7 @@
     <ul id="navigation-list">
         <li><button type="button" class="navigation-button home-nav" id="navigation-active" onclick="document.getElementById('home-banner').scrollIntoView();">Home</button></li>
         <li><button type="button" class="navigation-button skills-nav" onclick="document.getElementById('skills').scrollIntoView();">Skills</button></li>
+        <li><button type="button" class="navigation-button experience-nav" onclick="document.getElementById('experience-section').scrollIntoView();">Experience</button></li>
         <li><button type="button" class="navigation-button education-nav" onclick="document.getElementById('education-section').scrollIntoView();">Education</button></li>
         <li><button type="button" class="navigation-button projects-nav" onclick="document.getElementById('projects').scrollIntoView();">Projects</button></li>
         <li>
@@ -38,7 +39,7 @@
         <div id="about-text">
         <div class="home-text-title animated-element">Meet Me</div>
         <div class="white-bar animated-element"></div>
-        I am a third-year Computer Science and Mathematics undergraduate student at the University of Toronto,
+        I am a fourth-year Computer Science and Mathematics undergraduate student at the University of Toronto,
         currently pursuing a career in Software Development and Artificial Intelligence. I look forward to contributing
         to projects that push the boundaries of what's possible, whether that's new groundbreaking AI technology, or
         general software that improves the lives of others.
@@ -57,26 +58,34 @@
 <div class="skills-block">
     <div class="skills-title">Languages</div>
     <ul class="skills-list">
+        <li class="skills-list-item">C</li>
+        <li class="skills-list-item">C++</li>
         <li class="skills-list-item">Python</li>
         <li class="skills-list-item">Java</li>
-        <li class="skills-list-item">C</li>
         <li class="skills-list-item">Bash</li>
         <li class="skills-list-item">SQL</li>
         <li class="skills-list-item">RISC-V Assembly</li>
+        <li class="skills-list-item">Haskell</li>
+        <li class="skills-list-item">Racket</li>
         <li class="skills-list-item">Javascript</li>
         <li class="skills-list-item">HTML</li>
         <li class="skills-list-item">CSS</li>
+        <li class="skills-list-item">XAML</li>
     </ul>
     <span class="image-grid">
         <img src="/static/images/CLogo.png" alt="C programming language logo">
+        <img src="/static/images/C++Logo.png" alt="C++ programming language logo">
         <img src="/static/images/PythonLogo.png" alt="Python programming language logo">
         <img src="/static/images/JavaLogo.png" alt="Java programming language logo">
+        <img src="/static/images/BashLogo.png" alt="Bash programming language logo">
         <img src="/static/images/SQLLogo.png" alt="SQL programming language logo">
+        <img src="/static/images/RiscVLogo.png" alt="RISC-V Assembly programming language logo">
+        <img src="/static/images/HaskellLogo.png" alt="Haskell programming language logo">
+        <img src="/static/images/RacketLogo.png" alt="Racket programming language logo">
+        <img src="/static/images/JavascriptLogo.png" alt="Javascript programming language logo">
         <img src="/static/images/HTMLLogo.png" alt="HTML programming language logo">
         <img src="/static/images/CSSLogo.png" alt="CSS programming language logo">
-        <img src="/static/images/JavascriptLogo.png" alt="Javascript programming language logo">
-        <img src="/static/images/BashLogo.png" alt="Bash programming language logo">
-        <img src="/static/images/RiscVLogo.png" alt="RISC-V Assembly programming language logo">
+        <img src="/static/images/xamlLogo.png" alt="Xaml programming language logo">
     </span>
 </div>
 <!-- Frameworks and Technologies -->
@@ -87,29 +96,25 @@
          <img src="/static/images/UnrealEngineLogo.png" alt="Unreal Engine logo">
          <img src="/static/images/UnixLogo.png" alt="Picture of terminal">
          <img src="/static/images/DjangoLogo.png" alt="Django logo">
-         <img src="/static/images/CLionLogo.png" alt="CLion logo">
-         <img src="/static/images/IntelliJLogo.png" alt="IntelliJ logo">
-         <img src="/static/images/PyCharmLogo.png" alt="PyCharm logo">
-         <img src="/static/images/VisualStudioLogo.png" alt="Visual Studio logo">
+         <img src="/static/images/DockerLogo.png" alt="Docker logo">
      </span>
     <ul class="skills-list alt-skills-list">
         <li class="skills-list-item">Git</li>
-        <li class="skills-list-item">Unreal Engine</li>
         <li class="skills-list-item">Django</li>
-        <li class="skills-list-item">Django REST</li>
-        <li class="skills-list-item">IntelliJ</li>
-        <li class="skills-list-item">PyCharm</li>
-        <li class="skills-list-item">CLion</li>
+        <li class="skills-list-item">REST</li>
+        <li class="skills-list-item">Docker</li>
+        <li class="skills-list-item">Unreal Engine</li>
+        <li class="skills-list-item">.NET MAUI</li>
+        <li class="skills-list-item">GraphQL</li>
         <li class="skills-list-item">JavaFX</li>
-        <li class="skills-list-item">Visual Studio</li>
         <li class="skills-list-item">Flask</li>
         <li class="skills-list-item">Unix</li>
         <li class="skills-list-item">Agile</li>
         <li class="skills-list-item">CI/CD</li>
-        <li class="skills-list-item">Ripes</li>
     </ul>
     <div class="skills-title alt-skills-title">Frameworks & <br>Technologies</div>
 </div>
+
 <!-- Certificate Sections -->
 <div class=skills-block>
     <div class="skills-title">Certifications</div>
@@ -133,6 +138,42 @@
         </div>
 </div>
 
+<!-- Work Experience Section -->
+<br id="experience-section">
+<div class="home-text-title home-text animated-element">Work Experience</div>
+<div class="white-bar animated-element"></div>
+<div id="experience">
+    <!-- Huawei Canada Experience -->
+    <div class="experience-block">
+        <div class="experience-quick-info">
+            <div class="experience-title">Assistant Engineer</div>
+            <div class="experience-subtitle">Huawei Canada</div>
+            <div class="experience-date">May 2025 - Present</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">FaaS-based AI Data Engine</li>
+            <li class="skills-list-item">Distributed Caching Systems</li>
+            <li class="skills-list-item">C++ Multi-threading</li>
+            <li class="skills-list-item">Distributed Systems Debugging</li>
+        </ul>
+    </div>
+
+    <!-- Richmeadow Consulting Experience -->
+    <div class="experience-block">
+        <div class="experience-quick-info">
+            <div class="experience-title">Software Developer</div>
+            <div class="experience-subtitle">Richmeadow Consulting</div>
+            <div class="experience-date">May 2024 - April 2025</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">.NET MAUI</li>
+            <li class="skills-list-item">GraphQL APIs</li>
+            <li class="skills-list-item">XAML Front-End Design</li>
+            <li class="skills-list-item">C# Back-End Development</li>
+        </ul>
+    </div>
+</div>
+
 <!-- Education Section -->
 <br>
 <div class="home-text-title home-text animated-element">Education</div>
@@ -144,7 +185,7 @@
         <br>
         <div class="school-text">University of Toronto</div>
         <div class="degree-left">
-            HBSc, Computer Science and Mathematics<br><div class="school-date">Sep. 2022 - May. 2027 (Expected)</div>
+            HBSc, Computer Science and Mathematics<br><div class="school-date">Sep. 2022 - Jun. 2027 (Expected)</div>
         </div>
         <div class="awards">Awards</div>
         <div class="white-bar animated-element"></div>
@@ -176,6 +217,37 @@
 <div class="home-text-title home-text animated-element">Projects</div>
 <div class="white-bar animated-element"></div>
 <div id="projects">
+    <!-- Void Frontiers Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Void Frontiers</div>
+            <div class="project-subtitle">Game Development Project</div>
+            <div class="project-date">Jan. 2023 - Dec. 2025</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">C++</li>
+            <li class="skills-list-item">Object Oriented Programming</li>
+            <li class="skills-list-item">Network Programming</li>
+            <li class="skills-list-item">Optimization & Performance Tuning</li>
+        </ul>
+        <iframe class="project-media" src="https://www.youtube.com/embed/La7V_jFEKMs" allowfullscreen></iframe>
+    </div>
+
+    <!-- Simplified ext2 File System Project -->
+    <div class="project-block">
+        <div class="project-quick-info">
+            <div class="project-title">Simplified ext2 File System</div>
+            <div class="project-subtitle">System Programming Project</div>
+            <div class="project-date">Nov. 2024 - Dec. 2024</div>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-list-item">C</li>
+            <li class="skills-list-item">Concurrency</li>
+            <li class="skills-list-item">System Calls</li>
+            <li class="skills-list-item">Memory Management</li>
+        </ul>
+        <img class="project-media" src="/static/images/ext2filesystem.png" alt="A representation of the ext2 file system">
+    </div>
     <!-- Assembly Project -->
     <div class="project-block">
         <div class="project-quick-info">
