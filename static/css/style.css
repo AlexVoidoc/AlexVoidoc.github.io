@@ -374,7 +374,7 @@
 /* Compact Work Experience Section */
 .experience-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 20px;
     margin: 20px auto;
@@ -391,7 +391,8 @@
 }
 
 .experience-quick-info {
-    margin-bottom: 10px;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .experience-title {
@@ -409,33 +410,6 @@
     font-size: 18px;
     color: antiquewhite;
     margin-top: 5px;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skills-list-item {
-    background-color: #444;
-    color: white;
-    font-size: 23px;
-    float: left;
-    margin: 5px;
-    padding: 5px;
-    transition: .25s;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    overflow: hidden;
-}
-
-.skills-list-item:hover {
-    background-color: #555;
-    transform: scale(1.1);
 }
 
 /* Animations */
